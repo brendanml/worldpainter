@@ -4,8 +4,8 @@
 // LOTS OF PLACES WERE JUST USING INTS FOR THE SIZE OF ARRAYS, WOULD BE A GOOD IDEA TO USE DYNAMIC ARRAYS
 
 Tilemap::Tilemap() {
-    init(tileMap, "tilemap.txt");
-    init(tileMapFG, "fg.txt");
+    init(tileMap, "../save/tilemap.txt");
+    init(tileMapFG, "../save/fg.txt");
 }
 
 void Tilemap::init(Tile (&tilemap)[48][48], std::string filename) {

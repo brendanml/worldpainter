@@ -18,7 +18,7 @@ void Toolbar::constructButtons() {
     int buttonOffset = 4;
     int buttonVerticalOffset = buttonOffset;
     int buttonDimension = width-(2*buttonOffset);
-    Image uiImg = LoadImage("assets/uisheet.png");
+    Image uiImg = LoadImage("../assets/uisheet.png");
     uiTex = LoadTextureFromImage(uiImg);
     // here were priming this button to be the first active tool
     buttons.push_back(Button(buttonDimension, x+buttonOffset, y+buttonVerticalOffset, uiTex, 0, 0, true));

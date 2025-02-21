@@ -16,7 +16,7 @@ void Action::update() {
 
 void Action::perform(Tilemap tilemap) {
     if(function == "save") {
-        tilemap.outputMap(tilemap.tileMap, std::string("tilemap.txt"));
-        tilemap.outputMap(tilemap.tileMapFG, std::string("fg.txt"));
+        tilemap.outputMap(tilemap.tileMap, std::string("../save/tilemap.txt"));
+        tilemap.outputMap(tilemap.tileMapFG, std::string("../save/fg.txt"));
     }
 }

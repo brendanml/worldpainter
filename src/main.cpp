@@ -113,8 +113,8 @@ class UI {
 
         void output() {
             if(IsKeyPressed(KEY_FOUR)) {
-                tilemap.outputMap(tilemap.tileMap, std::string("tilemap.txt"));
-                tilemap.outputMap(tilemap.tileMapFG, std::string("fg.txt"));
+                tilemap.outputMap(tilemap.tileMap, std::string("../save/tilemap.txt"));
+                tilemap.outputMap(tilemap.tileMapFG, std::string("../save/fg.txt"));
             }
         }
 };

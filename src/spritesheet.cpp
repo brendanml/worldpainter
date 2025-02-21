@@ -6,7 +6,7 @@ Spritesheet::Spritesheet() {
 
     dimension = sqrt(SPRITESHEET_SIZE/2);
     std::cout << dimension << std::endl;
-    spritesheetImg = LoadImage("assets/spritesheet.png");
+    spritesheetImg = LoadImage("../assets/spritesheet.png");
     spritesheetTex = LoadTextureFromImage(spritesheetImg);
 }
 
@@ -33,6 +33,7 @@ void Spritesheet::draw(bool traceMode) {
 
 void Spritesheet::drawGrid() {
     for(int i = 0; i <= dimension; i++) {
+        int f = 0;
         DrawLine(x+(i*GRID_SIZE), y, x+(i*GRID_SIZE), y+SPRITESHEET_SIZE, BLACK);
         DrawLine(x, y+(i*GRID_SIZE), x+SPRITESHEET_SIZE, y+(i*GRID_SIZE), BLACK);
     }
